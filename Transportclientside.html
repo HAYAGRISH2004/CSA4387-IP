@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Transport Management</title>
+<link rel="stylesheet" href="transstyle.css">
+</head>
+<body>
+<header id="top">
+<nav>
+<ul>
+<li><a href="#Home">Home</a></li>
+<li><a href="#Register">Register</a></li>
+<li><a href="#Login">Login</a></li>
+<li><a href="#Contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="Home">
+<div class="Container">
+<center><img src="C:\xampp\htdocs\my_practice_webpage\sai.jpg" width="400px" height="600px"></center>
+<center><h2>This is Hayagrish. V. A very humble Sai devotee. This is his own webpage and this travels transport is named as<mark>SAI travels.</mark></h2></center><br><br>
+</div>
+</section>
+
+<section id = "Register">
+<div class="Contianer">
+<div class="box">
+<center><h2>Registration Page</h2></center>
+<form action="Register.php" method="get" if="regform">
+Name:<input type="text" name="name" id="name" required placeholder="Enter the name"><br><br>
+User Name:<input type="text" name="uname" id="uname" required placeholder="Create a user name"><br><br>
+Email ID:<input type="email" name="email" id="email" required placeholder="Enter the email"><br><br>
+Age:<input type="number" min="18" max="80" name="age" id="age" required placeholder="Enter the age"><br><br>
+Password:<input type="password" name="ps" id="ps" required placeholder="Enter the password"><br><br>
+<input type="Submit" value="Sign up"><br><br>
+</form>
+</div></div>
+</section>
+
+<section id = "Login">
+<div class="Contianer">
+<div class="box">
+<center><h2>Login Page</h2></center><br><br>
+<form action="Login.php" method="get" id="login">
+User Name:<input type="text" name="uname" id="uname" required placeholder="Create a user name"><br><br>
+Password:<input type="password" name="ps" id="ps" required placeholder="Enter the password"><br><br>
+<input type="Submit" value="Login"><br><br>
+</form>
+</div></div>
+</section>
+
+<section id="Contact>
+<div class="Container">
+<center><h2>@Nayanam Simulation Tect.pvt.ltd<h2></center><br><br>
+</div>
+</section>
+</main>
+<footer>
+<h3>@Nayanam Simulation Tect.pvt.ltd<h3></center><br><br>
+</footer>
+
+
+<script>
+function validateRegisterForm() {
+    var name = document.getElementById("name").value;
+    var uname = document.getElementById("uname").value;
+    var email = document.getElementById("email").value;
+    var age = document.getElementById("age").value;
+    var password = document.getElementById("ps").value;
+
+    if (name == "" || uname == "" || email == "" || age == "" || password == "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+    return true;
+}
+
+function validateLoginForm() {
+    var uname = document.getElementById("uname").value;
+    var password = document.getElementById("ps").value;
+
+    if (uname == "" || password == "") {
+        alert("User Name and Password must be filled out");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>
+
